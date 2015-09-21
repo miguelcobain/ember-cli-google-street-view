@@ -2,3 +2,8 @@
   height: 600px;
   width: 100%;
 }
+
+#map-test-container {
+  width: 100px;
+  height: 100px;
+}
