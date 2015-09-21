@@ -63,6 +63,7 @@ export default Ember.Component.extend({
   }),
 
   didInsertElement() {
+    console.log('street view didInsertElement');
     this.createStreetView();
   },
 

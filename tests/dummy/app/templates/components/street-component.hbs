@@ -1,12 +1,20 @@
 <h4>Try finding Dr Who's Tardis</h4>
-{{street-view 
-  lat=lat 
-  lng=lng 
-  height=height 
-  width=width 
-  zoom=zoom 
+{{#street-view
+  lat=lat
+  lng=lng
+  zoom=zoom
   pov=pov
-  panoChanged=panoChanged
-  linksChanged=linksChanged
-  positionChanged=positionChanged
-  povChanged=povChanged}}
+  panoChanged="panoChanged"
+  linksChanged="linksChanged"
+  positionChanged="positionChanged"
+  povChanged="povChanged"}}
+
+  {{street-view-marker title="Cafe" lat=40.730031 lng=-73.991428}}
+  {{street-view-marker title="Marker 2" lat=40.729681 lng=-73.991138}}
+  {{#if show3rd}}
+    {{street-view-marker title="Marker 3" lat=40.729559 lng=-73.990741}}
+  {{/if}}
+
+{{/street-view}}
+
+<button type="button" {{action "toggle3rd"}}>{{if show3rd "Hide" "Show"}} 3rd marker</button>
