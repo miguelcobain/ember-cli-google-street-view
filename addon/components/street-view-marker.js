@@ -23,7 +23,8 @@ export default Ember.Component.extend({
     let options = {};
     let optionsKeys = [
       'icon',
-      'title'
+      'title',
+      'label'
     ];
 
     let lat = this.get('lat');
